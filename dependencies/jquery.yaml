@@ -29,3 +29,8 @@ JQuery:
     # JavaScript resources
     packages/jquery/javascript/jquery-1.11.2.js:
     packages/jquery/javascript/jquery-ui-custom-1.11.4.js:
+      Depends:
+        - packages/jquery/javascript/jquery-1.11.2.js
+    packages/jquery/javascript/jquery-ui-augmentation.js:
+      Depends:
+        - packages/jquery/javascript/jquery-ui-custom-1.11.4.js

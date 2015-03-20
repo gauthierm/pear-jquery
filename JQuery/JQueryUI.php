@@ -50,6 +50,13 @@ class JQueryUI
 					'packages/jquery/javascript/'.$filename
 				)
 			);
+
+			// Include silverorange augmentations.
+			self::$html_head_entries->addEntry(
+				new SwatJavaScriptHtmlHeadEntry(
+					'packages/jquery/javascript/jquery-ui-augmentation.js'
+				)
+			);
 		}
 		return self::$html_head_entries;
 	}
