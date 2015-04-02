@@ -97,3 +97,17 @@ $.datepicker._gotoToday = function(id) {
 		);
 	}
 };
+
+/**
+ * Override attachemnts method that draws the trigger button to set a disabled
+ * class on the trigger button if necessary.
+ */
+$.datepicker._superAttachments = $.datepicker._attachments;
+$.datepicker._attachments = function(input, inst) {
+	$.datepicker._superAttachments(input, inst);
+
+	if (inst.settings.disabled) {
+		inst.trigger.addClass('ui-state-disabled');
+		inst.trigger.prop('disabled', true);
+	}
+};
