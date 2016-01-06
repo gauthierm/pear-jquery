@@ -3,7 +3,7 @@
 	"description": "Provides jQuery compatibile with silverorange packages.",
 	"type": "library",
 	"keywords": [ "jquery" ],
-	"homepage": "https://github.com/silverorange/jquery",
+	"homepage": "https://github.com/silverorange/pear-jquery",
 	"license": "MIT",
 	"authors": [
 		{
